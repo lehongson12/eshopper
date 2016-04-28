@@ -1,0 +1,8 @@
+- if category.errors.any?
+  .alert.alert-danger #{pluralize category.errors.count, "error"} prohibited this user from being saved.
+= simple_form_for @category, url: admin_categories_path, html: {class: "form-horizontal", :multipart => true }, wrapper: :horizontal_form do |f|
+  = f.input :name
+  = f.input :description
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = f.button :submit

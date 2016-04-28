@@ -25,6 +25,8 @@ gem "prawn"
 gem "prawn-table"
 gem "font-awesome-rails"
 gem "gmaps4rails"
+gem "cancancan"
+gem "faker"
 group :development, :test do
   gem "byebug"
 
