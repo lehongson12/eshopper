@@ -21,3 +21,64 @@
 
 en:
   hello: "Hello world"
+  users:
+    account: "Account"
+    profile: "Profile"
+    setting: "Setting"
+    all: "All Users"
+    update:
+      success: "Users updated successfully"
+      error: "Users updated errors"
+    destroy:
+      success: "Users deleted successfully"
+      error: "Users deleted error"
+    show: "Show Users"
+  admin:
+    panel: "Admin Panel"
+    manage_user: "Manage Users"
+    manage_category: "Manage Category"
+  button:
+    change_role: "Change Role"
+    delete: "Delete"
+    submit: "Submit"
+    product: "Manage product"
+    edit: "Edit"
+  product:
+    create:
+      success: "product Created successfully"
+      error: "product Created Error"
+      new: "Create product"
+    update:
+      success: "product updated successfully"
+      error: "product updated error"
+    destroy:
+      success: "product deleted successfully"
+      error: "Could not delete product"
+    edit: "Edit product"
+    products: "products"
+    state: "State"
+    subject: "Subject"
+  category:
+    create:
+      success: "Category Created successfully"
+      error: "Category Created Error"
+      new: "Create Category"
+    update:
+      success: "category updated successfully"
+      error: "Category updated error"
+    destroy:
+      success: "category deleted successfully"
+      error: "Could not delete category"
+    all: "All Category"
+    name: "Name"
+    description: "Description"
+    edit: "Edit Category"
+  number:
+    1: "1"
+    2: "2"
+    3: "3"
+    4: "4"
+    20: "20"
+  table:
+    action: "Action"
+  alert: "Are you sure?"

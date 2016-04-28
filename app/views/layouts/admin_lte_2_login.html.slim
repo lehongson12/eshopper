@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content=""]
+    meta[name="author" content=""]
+
+    title
+      | Home | J-Shopper
+    = stylesheet_link_tag "application", media: "all", 'data-turbolinks-track' => true
+    = javascript_include_tag "application", 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    link[rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"]
+  body
+    header#header
+      = render "layouts/header"
+    section#form
+      /! form
+      .container
+        .row
+          .col-sm-4.col-sm-offset-1
+            .login-form
+              /! login form
+              h2 Login to your account
+              = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+                .form-inputs
+                  = f.input :email, required: false, autofocus: true, placeholder: "Email"
+                  = f.input :password, required: false, placeholder: "Password"
+                  = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+                .form-actions
+                  = f.button :submit, "Log in", class: "btn btn-default btn-primary"
+
+            /! /login form
+          .col-sm-1
+            h2.or OR
+          .col-sm-4
+            .signup-form
+              /! sign up form
+              h2 New User Signup!
+              = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+                = f.error_notification
+                .form-inputs
+                  = f.input :email, required: true, autofocus: true, placeholder: "Email"
+                  = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder: "Password"
+                  = f.input :password_confirmation, required: true, placeholder: "Password"
+                .form-actions
+                  = f.button :submit, "Sign up", class: "btn btn-default btn-primary"
+            /! /sign up form
+    /! /form
+    footer#footer
+      = render "layouts/footer"
+    = link_to "", id: "scrollUp", style: "position: fixed; z-index: 2147483647;" do
+      .span
+        i.fa.fa-angle-up

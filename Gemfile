@@ -25,6 +25,10 @@ gem "prawn"
 gem "prawn-table"
 gem "font-awesome-rails"
 gem "gmaps4rails"
+gem "cancancan"
+gem "faker"
+gem "lte-rails"
+gem 'adminlte2-rails'
 group :development, :test do
   gem "byebug"
 
@@ -33,3 +37,5 @@ group :development, :test do
   gem "spring"
 end
 
+
+gem 'devise'

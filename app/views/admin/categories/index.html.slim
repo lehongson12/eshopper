@@ -1,0 +1,17 @@
+.page-header
+  h2
+    = t(".all_categories")
+    = link_to new_admin_category_path, class: "btn btn-primary pull-right" do
+      i.fa.fa-plus>
+      | Add new category
+.row
+  .col-sm-12
+    table#categories.table.table-striped.table-hover.dataTable.no-footer[
+      role="grid" data-source==admin_categories_path(format: "json") style="width: 100%"
+    ]
+      thead
+        tr
+          th.col-md-3 Name
+          th.col-md-7 Description
+          th.col-md-2 Actions
+      tbody
