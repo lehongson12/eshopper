@@ -1,0 +1,277 @@
+//colors
+$black: #000;
+$color_west_side_approx: #fe980f;
+$white: #fff;
+$color_cararra_approx: #f0f0e9;
+$color_ironside_gray_approx: #696763;
+$color_lochmara_approx: #0083c9;
+$color_picton_blue_approx: #5bbcec;
+$color_pomegranate_approx: #ff4518;
+$color_cornflower_approx: #90c9dc;
+$color_persian_red_approx: #ce3c2d;
+$color_wild_sand_approx: #f5f5f5;
+$color_nobel_approx: #b4b1ab;
+$color_texas_rose_approx: #fdb45e;
+$black_60: rgba(0, 0, 0, 0.6);
+$black_10: rgba(0, 0, 0, 0.1);
+$color_alto_approx: #e0e0da;
+$color_swirl_approx: #ccccc6;
+$color_stack_approx: #8c8c88;
+$color_quill_gray_approx: #d6d6d0;
+$color_tuatara_approx: #363432;
+$color_gray_nickel_approx: #c4c4be;
+$color_silver_approx: #c2c2c1;
+$color_spring_wood_approx: #f7f7f0;
+$concrete: #f2f2f2;
+$color_black_haze_approx: #f7f7f5;
+$color_pampas_approx: #f5f5ed;
+$color_silver_chalice_approx: #b3afa8;
+$color_cape_cod_approx: #40403e;
+$color_delta_approx: #a6a6a1;
+$color_bon_jour_approx: #e6e4df;
+$color_masala_approx: #393b3b;
+$color_celeste_approx: #cccccc;
+$color_bombay_approx: #adb2b2;
+$color_mountain_mist_approx: #999;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+$font_2: roboto;
+$font_3: abel;
+
+//urls
+$url_0: url(../images/home/searchicon.png);
+
+//@extend-elements
+//original selectors
+//.usa:active, .usa.active
+%extend_1 {
+  background: none repeat scroll 0 0 $color_west_side_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: inherit;
+  outline: 0 none;
+}
+
+//original selectors
+//.dropdown-menu li a:hover, .dropdown-menu li a:focus
+%extend_2 {
+  background-color: $color_west_side_approx;
+  color: $white;
+  font-family: $font_0, $font_1;
+  text-decoration: none;
+}
+
+//original selectors
+//.left-sidebar h2, .brands_products h2
+%extend_3 {
+  color: $color_west_side_approx;
+  font-family: $font_0, $font_1;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+}
+
+//original selectors
+//.left-sidebar h2:after, h2.title:after
+%extend_4 {
+  content: " ";
+  position: absolute;
+  border: 1px solid $color_wild_sand_approx;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
+}
+
+//original selectors
+//.new, .sale
+%extend_5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//original selectors
+//.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus
+%extend_6 {
+  background-color: $color_west_side_approx;
+  border: 0;
+  color: $white;
+  cursor: default;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+//original selectors
+//.pagination li:first-child a, .pagination li:first-child span
+%extend_7 {
+  //Instead of the line below you could use @include border-bottom-left-radius($radius)
+  border-bottom-left-radius: 0;
+  //Instead of the line below you could use @include border-top-left-radius($radius)
+  border-top-left-radius: 0;
+  margin-left: 0;
+}
+
+//original selectors
+//.pagination .active a, .pagination .active span, .pagination .active a:hover, .pagination .active span:hover, .pagination .active a:focus, .pagination .active span:focus
+%extend_8 {
+  background-color: $color_west_side_approx;
+  border-color: $color_west_side_approx;
+  color: $white;
+  cursor: default;
+  z-index: 2;
+}
+
+//original selectors
+//.pagination li a, .pagination li span
+%extend_9 {
+  background-color: $color_cararra_approx;
+  border: 0;
+  float: left;
+  line-height: 1.42857;
+  margin-left: -1px;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  margin-right: 5px;
+  color: $black;
+}
+
+//original selectors
+//.login-form h2, .signup-form h2
+%extend_10 {
+  color: $color_ironside_gray_approx;
+  font-family: $font_0, $font_1;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+//original selectors
+//.login-form form input, .signup-form form input
+%extend_11 {
+  background: $color_cararra_approx;
+  border: medium none;
+  color: $color_ironside_gray_approx;
+  display: block;
+  font-family: $font_0, $font_1;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  margin-bottom: 10px;
+  outline: medium none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+//original selectors
+//.login-form form button, .signup-form form button
+%extend_12 {
+  background: $color_west_side_approx;
+  border: medium none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  color: $white;
+  display: block;
+  font-family: $font_0, $font_1;
+  padding: 6px 25px;
+}
+
+//original selectors
+//#do_action .total_area, #do_action .chose_area
+%extend_13 {
+  border: 1px solid $color_bon_jour_approx;
+  color: $color_ironside_gray_approx;
+  padding: 30px 25px 30px 0;
+  margin-bottom: 80px;
+}
+
+//original selectors
+//.user_info input, select, textarea
+%extend_14 {
+  background: $color_cararra_approx;
+  border: 0;
+  color: $color_ironside_gray_approx;
+  padding: 5px;
+  width: 100%;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  resize: none;
+}
+
+//original selectors
+//.update, .check_out
+%extend_15 {
+  background: $color_west_side_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  color: $white;
+  margin-top: 18px;
+  border: none;
+  padding: 5px 15px;
+}
+
+//original selectors
+//.register-req, .step-one .heading
+%extend_16 {
+  background: none repeat scroll 0 0 $color_cararra_approx;
+  color: $color_tuatara_approx;
+  font-size: 20px;
+  margin-bottom: 35px;
+  padding: 10px 25px;
+  font-family: $font_0, $font_1;
+}
+
+//original selectors
+//.shopper-info p, .bill-to p, .order-message p
+%extend_17 {
+  color: $color_ironside_gray_approx;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+//original selectors
+//.shopper-info >form >input, .form-two >form >select, .form-two >form >input, .form-one >form >input
+%extend_18 {
+  background: $color_cararra_approx;
+  border: 0 none;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 300;
+}
+
+//original selectors
+//.sinlge-post-meta li i:after, .blog-post-area.post-meta ul li i:after
+%extend_19 {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-color: transparent transparent transparent $color_west_side_approx;
+  border-width: 4px;
+  border-style: solid;
+  top: 6px;
+  left: 24px;
+}
+
+//original selectors
+//.media-list .btn-primary, .commnets .btn-primary
+%extend_20 {
+  background: $color_west_side_approx;
+  border: 0 none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  color: $white;
+  float: left;
+  font-size: 10px;
+  padding: 1px 7px;
+  text-transform: uppercase;
+}
+

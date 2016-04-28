@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  input_price: MyString
+  output_price: MyString
+  description: MyText
+  description_mini: MyText
+  picture: MyString
+  is_sale: false
+  is_new: false
+
+two:
+  name: MyString
+  input_price: MyString
+  output_price: MyString
+  description: MyText
+  description_mini: MyText
+  picture: MyString
+  is_sale: false
+  is_new: false

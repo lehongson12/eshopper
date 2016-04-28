@@ -1,0 +1,139 @@
+.product-details
+  .col-sm-5
+    .view-product
+      = image_tag("product-details/1.jpg", alt: "")
+      h3
+        | ZOOM
+    #similar-product.carousel.slide[data-ride="carousel"]
+      .carousel-inner
+        .item.active
+          = link_to image_tag("product-details/similar1.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar2.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar3.jpg", alt: ""), "#"
+        .item
+          = link_to image_tag("product-details/similar1.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar2.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar3.jpg", alt: ""), "#"
+        .item
+          = link_to image_tag("product-details/similar1.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar2.jpg", alt: ""), "#"
+          = link_to image_tag("product-details/similar3.jpg", alt: ""), "#"
+      a.left.item-control[href="#similar-product" data-slide="prev"]
+        i.fa.fa-angle-left
+      a.right.item-control[href="#similar-product" data-slide="next"]
+        i.fa.fa-angle-right
+  .col-sm-7
+    .product-information
+      = image_tag("product-details/new.jpg", alt: "", class: "newarrival")
+      h2
+        | Anne Klein Sleeveless Colorblock Scuba
+      p
+        | Web ID: 1089772
+      = image_tag("product-details/rating.png", alt: "")
+      span
+        span
+          | US $59
+        label
+          | Quantity:
+        input[type="text" value="3"]
+        button.btn.btn-fefault.cart[type="button"]
+          i.fa.fa-shopping-cart
+          |  Add to cart
+      p
+        b
+          | Availability:
+        |  In Stock
+      p
+        b
+          | Condition:
+        |  New
+      p
+        b
+          | Brand:
+        |  J-SHOPPER
+      = link_to "", class: "" do
+        .span
+          = image_tag("product-details/share.png", alt: "", class: "share img-responsive")
+.recommended_items
+  h2.title.text-center
+    | recommended items
+  #recommended-item-carousel.carousel.slide[data-ride="carousel"]
+    .carousel-inner
+      .item.active
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend1.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend2.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend3.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+      .item
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend1.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend2.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+        .col-sm-4
+          .product-image-wrapper
+            .single-products
+              .productinfo.text-center
+                = image_tag("home/recommend3.jpg", alt: "")
+                h2
+                  | $56
+                p
+                  | Easy Polo Black Edition
+                a.btn.btn-default.add-to-cart[href="#"]
+                  i.fa.fa-shopping-cart
+                  | Add to cart
+    a.left.recommended-item-control[href="#recommended-item-carousel" data-slide="prev"]
+      i.fa.fa-angle-left
+    a.right.recommended-item-control[href="#recommended-item-carousel" data-slide="next"]
+      i.fa.fa-angle-right

@@ -1,0 +1,148 @@
+.header_top
+  .container
+    .row
+      .col-sm-6
+        .contactinfo
+          ul.nav.nav-pills
+            li
+              a[href="#"]
+                i.fa.fa-phone
+                |  +84 974 063 965
+            li
+              a[href="#"]
+                i.fa.fa-envelope
+                |  lehongson.bkvn@gmail.com
+      .col-sm-6
+        .social-icons.pull-right
+          ul.nav.navbar-nav
+            li
+              a[href="#"]
+                i.fa.fa-facebook
+            li
+              a[href="#"]
+                i.fa.fa-twitter
+            li
+              a[href="#"]
+                i.fa.fa-linkedin
+            li
+              a[href="#"]
+                i.fa.fa-dribbble
+            li
+              a[href="#"]
+                i.fa.fa-google-plus
+.header-middle
+  .container
+    .row
+      .col-sm-4
+        .logo.pull-left
+          = link_to root_path, class: "logo" do
+            .span
+              = image_tag("images/home/logo.png", alt: "logo")
+        .btn-group.pull-right
+          .btn-group
+            button.btn.btn-default.dropdown-toggle.usa[type="button" data-toggle="dropdown"]
+              |  USA
+              span.caret
+            ul.dropdown-menu
+              li
+                a[href="#"]
+                  | Canada
+              li
+                a[href="#"]
+                  | UK
+          .btn-group
+            button.btn.btn-default.dropdown-toggle.usa[type="button" data-toggle="dropdown"]
+              |  DOLLAR
+              span.caret
+            ul.dropdown-menu
+              li
+                a[href="#"]
+                  | Canadian Dollar
+              li
+                a[href="#"]
+                  | Pound
+      .col-sm-8
+        .shop-menu.pull-right
+          ul.nav.navbar-nav
+            li
+              a[href="#"]
+                i.fa.fa-user
+                |  Account
+            li
+              a[href="#"]
+                i.fa.fa-star
+                |  Wishlist
+            li
+              a[href=""]
+                i.fa.fa-crosshairs
+                |  Checkout
+            li
+              a[href=""]
+                i.fa.fa-shopping-cart
+                |  Cart
+            li
+              a[href=""]
+                i.fa.fa-lock
+                |  Login
+.header-bottom
+  .container
+    .row
+      .col-sm-9
+        .navbar-header
+          button.navbar-toggle[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
+            span.sr-only
+              | Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .mainmenu.pull-left
+          ul.nav.navbar-nav.collapse.navbar-collapse
+            li
+              = link_to root_path, class: "active" do
+                .span
+                  | Home
+            li.dropdown
+              = link_to products_path, class: "" do
+                .span
+                  | Shop
+                  i.fa.fa-angle-down
+              ul.sub-menu[role="menu"]
+                li
+                  = link_to root_path, class: "" do
+                    .span
+                      | Products
+                li
+                  = link_to root_path, class: "" do
+                    .span
+                      | Producs-daital
+                li
+                  a[href="checkout.html"]
+                    | Checkout
+                li
+                  a[href="cart.html"]
+                    | Cart
+                li
+                  a[href="login.html"]
+                    | Login
+            li.dropdown
+              = link_to blogs_path, class: "" do
+                .span
+                  | Blog
+                  i.fa.fa-angle-down
+              ul.sub-menu[role="menu"]
+                li
+                  a[href="blog.html"]
+                    | Blog List
+                li
+                  a[href="blog-single.html"]
+                    | Blog Single
+            li
+              a[href="404.html"]
+                | 404
+            li
+              = link_to contacts_path, class: "" do
+                .span
+                  | Contact
+      .col-sm-3
+        .search_box.pull-right
+          input[type="text" placeholder="Search"]
